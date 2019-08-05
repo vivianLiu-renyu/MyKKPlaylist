@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C82BDBED22F4373500AB63CA /* accessToken.json in Resources */ = {isa = PBXBuildFile; fileRef = C82BDBEC22F4373500AB63CA /* accessToken.json */; };
+		C82BDBEF22F445C100AB63CA /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BDBEE22F445C100AB63CA /* DataType.swift */; };
+		C867713E22F2F9F700FC75C1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C867713D22F2F9F700FC75C1 /* API.swift */; };
+		C89ED5D522F052BD0065D670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89ED5D422F052BD0065D670 /* AppDelegate.swift */; };
+		C89ED5D722F052BD0065D670 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89ED5D622F052BD0065D670 /* SceneDelegate.swift */; };
+		C89ED5D922F052BD0065D670 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89ED5D822F052BD0065D670 /* PlaylistView.swift */; };
+		C89ED5DB22F052C10065D670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89ED5DA22F052C10065D670 /* Assets.xcassets */; };
+		C89ED5DE22F052C10065D670 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89ED5DD22F052C10065D670 /* Preview Assets.xcassets */; };
+		C89ED5E122F052C10065D670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C89ED5DF22F052C10065D670 /* LaunchScreen.storyboard */; };
+		C89ED5EC22F052C10065D670 /* MyKKPlaylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89ED5EB22F052C10065D670 /* MyKKPlaylistTests.swift */; };
+		C89ED5F722F052C10065D670 /* MyKKPlaylistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89ED5F622F052C10065D670 /* MyKKPlaylistUITests.swift */; };
+		C89ED60922F146350065D670 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89ED60822F146340065D670 /* HomeView.swift */; };
+		C89ED60B22F2DD500065D670 /* SortMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89ED60A22F2DD500065D670 /* SortMenuView.swift */; };
+		F8EE522B5C7A46AFB2450BD6 /* Pods_MyKKPlaylist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC3F5C6C857B229103E91D1 /* Pods_MyKKPlaylist.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C89ED5E822F052C10065D670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C89ED5C922F052BD0065D670 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C89ED5D022F052BD0065D670;
+			remoteInfo = MyKKPlaylist;
+		};
+		C89ED5F322F052C10065D670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C89ED5C922F052BD0065D670 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C89ED5D022F052BD0065D670;
+			remoteInfo = MyKKPlaylist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CC3F5C6C857B229103E91D1 /* Pods_MyKKPlaylist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyKKPlaylist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		422075455CE9C10519B95499 /* Pods-MyKKPlaylist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKKPlaylist.debug.xcconfig"; path = "Target Support Files/Pods-MyKKPlaylist/Pods-MyKKPlaylist.debug.xcconfig"; sourceTree = "<group>"; };
+		58A552E4F909BC214FC0E6F0 /* Pods-MyKKPlaylist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKKPlaylist.release.xcconfig"; path = "Target Support Files/Pods-MyKKPlaylist/Pods-MyKKPlaylist.release.xcconfig"; sourceTree = "<group>"; };
+		C82BDBEC22F4373500AB63CA /* accessToken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accessToken.json; sourceTree = "<group>"; };
+		C82BDBEE22F445C100AB63CA /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		C867713D22F2F9F700FC75C1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C89ED5D122F052BD0065D670 /* MyKKPlaylist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyKKPlaylist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89ED5D422F052BD0065D670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C89ED5D622F052BD0065D670 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C89ED5D822F052BD0065D670 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
+		C89ED5DA22F052C10065D670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C89ED5DD22F052C10065D670 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C89ED5E022F052C10065D670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C89ED5E222F052C10065D670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C89ED5E722F052C10065D670 /* MyKKPlaylistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyKKPlaylistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89ED5EB22F052C10065D670 /* MyKKPlaylistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKKPlaylistTests.swift; sourceTree = "<group>"; };
+		C89ED5ED22F052C10065D670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C89ED5F222F052C10065D670 /* MyKKPlaylistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyKKPlaylistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89ED5F622F052C10065D670 /* MyKKPlaylistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKKPlaylistUITests.swift; sourceTree = "<group>"; };
+		C89ED5F822F052C10065D670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C89ED60822F146340065D670 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C89ED60A22F2DD500065D670 /* SortMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortMenuView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C89ED5CE22F052BD0065D670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EE522B5C7A46AFB2450BD6 /* Pods_MyKKPlaylist.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89ED5E422F052C10065D670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89ED5EF22F052C10065D670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9739E3FE7513E073CC5513C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CC3F5C6C857B229103E91D1 /* Pods_MyKKPlaylist.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B106E366BC89616611540C0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				422075455CE9C10519B95499 /* Pods-MyKKPlaylist.debug.xcconfig */,
+				58A552E4F909BC214FC0E6F0 /* Pods-MyKKPlaylist.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C867713C22F2F53700FC75C1 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				C89ED5D822F052BD0065D670 /* PlaylistView.swift */,
+				C89ED60822F146340065D670 /* HomeView.swift */,
+				C89ED60A22F2DD500065D670 /* SortMenuView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		C89ED5C822F052BD0065D670 = {
+			isa = PBXGroup;
+			children = (
+				C89ED5D322F052BD0065D670 /* MyKKPlaylist */,
+				C89ED5EA22F052C10065D670 /* MyKKPlaylistTests */,
+				C89ED5F522F052C10065D670 /* MyKKPlaylistUITests */,
+				C89ED5D222F052BD0065D670 /* Products */,
+				B106E366BC89616611540C0D /* Pods */,
+				9739E3FE7513E073CC5513C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C89ED5D222F052BD0065D670 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C89ED5D122F052BD0065D670 /* MyKKPlaylist.app */,
+				C89ED5E722F052C10065D670 /* MyKKPlaylistTests.xctest */,
+				C89ED5F222F052C10065D670 /* MyKKPlaylistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C89ED5D322F052BD0065D670 /* MyKKPlaylist */ = {
+			isa = PBXGroup;
+			children = (
+				C867713C22F2F53700FC75C1 /* UIView */,
+				C89ED5D422F052BD0065D670 /* AppDelegate.swift */,
+				C89ED5D622F052BD0065D670 /* SceneDelegate.swift */,
+				C867713D22F2F9F700FC75C1 /* API.swift */,
+				C82BDBEE22F445C100AB63CA /* DataType.swift */,
+				C82BDBEC22F4373500AB63CA /* accessToken.json */,
+				C89ED5DA22F052C10065D670 /* Assets.xcassets */,
+				C89ED5DF22F052C10065D670 /* LaunchScreen.storyboard */,
+				C89ED5E222F052C10065D670 /* Info.plist */,
+				C89ED5DC22F052C10065D670 /* Preview Content */,
+			);
+			path = MyKKPlaylist;
+			sourceTree = "<group>";
+		};
+		C89ED5DC22F052C10065D670 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C89ED5DD22F052C10065D670 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C89ED5EA22F052C10065D670 /* MyKKPlaylistTests */ = {
+			isa = PBXGroup;
+			children = (
+				C89ED5EB22F052C10065D670 /* MyKKPlaylistTests.swift */,
+				C89ED5ED22F052C10065D670 /* Info.plist */,
+			);
+			path = MyKKPlaylistTests;
+			sourceTree = "<group>";
+		};
+		C89ED5F522F052C10065D670 /* MyKKPlaylistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C89ED5F622F052C10065D670 /* MyKKPlaylistUITests.swift */,
+				C89ED5F822F052C10065D670 /* Info.plist */,
+			);
+			path = MyKKPlaylistUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C89ED5D022F052BD0065D670 /* MyKKPlaylist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C89ED5FB22F052C10065D670 /* Build configuration list for PBXNativeTarget "MyKKPlaylist" */;
+			buildPhases = (
+				AB602E8DA6454497A19C6CC7 /* [CP] Check Pods Manifest.lock */,
+				C82BDBE922F42C3E00AB63CA /* ShellScript */,
+				C89ED5CD22F052BD0065D670 /* Sources */,
+				C89ED5CE22F052BD0065D670 /* Frameworks */,
+				C89ED5CF22F052BD0065D670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyKKPlaylist;
+			productName = MyKKPlaylist;
+			productReference = C89ED5D122F052BD0065D670 /* MyKKPlaylist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C89ED5E622F052C10065D670 /* MyKKPlaylistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C89ED5FE22F052C10065D670 /* Build configuration list for PBXNativeTarget "MyKKPlaylistTests" */;
+			buildPhases = (
+				C89ED5E322F052C10065D670 /* Sources */,
+				C89ED5E422F052C10065D670 /* Frameworks */,
+				C89ED5E522F052C10065D670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C89ED5E922F052C10065D670 /* PBXTargetDependency */,
+			);
+			name = MyKKPlaylistTests;
+			productName = MyKKPlaylistTests;
+			productReference = C89ED5E722F052C10065D670 /* MyKKPlaylistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C89ED5F122F052C10065D670 /* MyKKPlaylistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C89ED60122F052C10065D670 /* Build configuration list for PBXNativeTarget "MyKKPlaylistUITests" */;
+			buildPhases = (
+				C89ED5EE22F052C10065D670 /* Sources */,
+				C89ED5EF22F052C10065D670 /* Frameworks */,
+				C89ED5F022F052C10065D670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C89ED5F422F052C10065D670 /* PBXTargetDependency */,
+			);
+			name = MyKKPlaylistUITests;
+			productName = MyKKPlaylistUITests;
+			productReference = C89ED5F222F052C10065D670 /* MyKKPlaylistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C89ED5C922F052BD0065D670 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Vivian Liu";
+				TargetAttributes = {
+					C89ED5D022F052BD0065D670 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					C89ED5E622F052C10065D670 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = C89ED5D022F052BD0065D670;
+					};
+					C89ED5F122F052C10065D670 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = C89ED5D022F052BD0065D670;
+					};
+				};
+			};
+			buildConfigurationList = C89ED5CC22F052BD0065D670 /* Build configuration list for PBXProject "MyKKPlaylist" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C89ED5C822F052BD0065D670;
+			productRefGroup = C89ED5D222F052BD0065D670 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C89ED5D022F052BD0065D670 /* MyKKPlaylist */,
+				C89ED5E622F052C10065D670 /* MyKKPlaylistTests */,
+				C89ED5F122F052C10065D670 /* MyKKPlaylistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C89ED5CF22F052BD0065D670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89ED5E122F052C10065D670 /* LaunchScreen.storyboard in Resources */,
+				C89ED5DE22F052C10065D670 /* Preview Assets.xcassets in Resources */,
+				C89ED5DB22F052C10065D670 /* Assets.xcassets in Resources */,
+				C82BDBED22F4373500AB63CA /* accessToken.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89ED5E522F052C10065D670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89ED5F022F052C10065D670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB602E8DA6454497A19C6CC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyKKPlaylist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C82BDBE922F42C3E00AB63CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/build-phase/get_access_token.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C89ED5CD22F052BD0065D670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89ED5D522F052BD0065D670 /* AppDelegate.swift in Sources */,
+				C89ED60B22F2DD500065D670 /* SortMenuView.swift in Sources */,
+				C867713E22F2F9F700FC75C1 /* API.swift in Sources */,
+				C89ED60922F146350065D670 /* HomeView.swift in Sources */,
+				C89ED5D722F052BD0065D670 /* SceneDelegate.swift in Sources */,
+				C89ED5D922F052BD0065D670 /* PlaylistView.swift in Sources */,
+				C82BDBEF22F445C100AB63CA /* DataType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89ED5E322F052C10065D670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89ED5EC22F052C10065D670 /* MyKKPlaylistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89ED5EE22F052C10065D670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89ED5F722F052C10065D670 /* MyKKPlaylistUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C89ED5E922F052C10065D670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C89ED5D022F052BD0065D670 /* MyKKPlaylist */;
+			targetProxy = C89ED5E822F052C10065D670 /* PBXContainerItemProxy */;
+		};
+		C89ED5F422F052C10065D670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C89ED5D022F052BD0065D670 /* MyKKPlaylist */;
+			targetProxy = C89ED5F322F052C10065D670 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C89ED5DF22F052C10065D670 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C89ED5E022F052C10065D670 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C89ED5F922F052C10065D670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C89ED5FA22F052C10065D670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C89ED5FC22F052C10065D670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422075455CE9C10519B95499 /* Pods-MyKKPlaylist.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "MyKKPlaylist/Preview\\ Content";
+				DEVELOPMENT_TEAM = K3U5AGBRDX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyKKPlaylist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivianliu.MyKKPlaylist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C89ED5FD22F052C10065D670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58A552E4F909BC214FC0E6F0 /* Pods-MyKKPlaylist.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "MyKKPlaylist/Preview\\ Content";
+				DEVELOPMENT_TEAM = K3U5AGBRDX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyKKPlaylist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivianliu.MyKKPlaylist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C89ED5FF22F052C10065D670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3U5AGBRDX;
+				INFOPLIST_FILE = MyKKPlaylistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivianliu.MyKKPlaylistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyKKPlaylist.app/MyKKPlaylist";
+			};
+			name = Debug;
+		};
+		C89ED60022F052C10065D670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3U5AGBRDX;
+				INFOPLIST_FILE = MyKKPlaylistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivianliu.MyKKPlaylistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyKKPlaylist.app/MyKKPlaylist";
+			};
+			name = Release;
+		};
+		C89ED60222F052C10065D670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3U5AGBRDX;
+				INFOPLIST_FILE = MyKKPlaylistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivianliu.MyKKPlaylistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyKKPlaylist;
+			};
+			name = Debug;
+		};
+		C89ED60322F052C10065D670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3U5AGBRDX;
+				INFOPLIST_FILE = MyKKPlaylistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivianliu.MyKKPlaylistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyKKPlaylist;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C89ED5CC22F052BD0065D670 /* Build configuration list for PBXProject "MyKKPlaylist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89ED5F922F052C10065D670 /* Debug */,
+				C89ED5FA22F052C10065D670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C89ED5FB22F052C10065D670 /* Build configuration list for PBXNativeTarget "MyKKPlaylist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89ED5FC22F052C10065D670 /* Debug */,
+				C89ED5FD22F052C10065D670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C89ED5FE22F052C10065D670 /* Build configuration list for PBXNativeTarget "MyKKPlaylistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89ED5FF22F052C10065D670 /* Debug */,
+				C89ED60022F052C10065D670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C89ED60122F052C10065D670 /* Build configuration list for PBXNativeTarget "MyKKPlaylistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89ED60222F052C10065D670 /* Debug */,
+				C89ED60322F052C10065D670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C89ED5C922F052BD0065D670 /* Project object */;
+}
