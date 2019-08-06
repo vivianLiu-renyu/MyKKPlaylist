@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -118,6 +118,15 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		C875BCEA22F9604B00A36B80 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C867713D22F2F9F700FC75C1 /* API.swift */,
+				C82BDBEE22F445C100AB63CA /* DataType.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		C89ED5C822F052BD0065D670 = {
 			isa = PBXGroup;
 			children = (
@@ -143,11 +152,10 @@
 		C89ED5D322F052BD0065D670 /* MyKKPlaylist */ = {
 			isa = PBXGroup;
 			children = (
+				C875BCEA22F9604B00A36B80 /* API */,
 				C867713C22F2F53700FC75C1 /* UIView */,
 				C89ED5D422F052BD0065D670 /* AppDelegate.swift */,
 				C89ED5D622F052BD0065D670 /* SceneDelegate.swift */,
-				C867713D22F2F9F700FC75C1 /* API.swift */,
-				C82BDBEE22F445C100AB63CA /* DataType.swift */,
 				C82BDBEC22F4373500AB63CA /* accessToken.json */,
 				C89ED5DA22F052C10065D670 /* Assets.xcassets */,
 				C89ED5DF22F052C10065D670 /* LaunchScreen.storyboard */,
