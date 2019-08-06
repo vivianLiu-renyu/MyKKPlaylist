@@ -1,27 +1,17 @@
 import SwiftUI
 
-
-
 struct PlaylistView : View {
     var playlistName: String
-    var songData = [
-        SongData(songName: "Playlist A", artistName: "Artist A", album: "Tata"),
-        SongData(songName: "Playlist B", artistName: "Artist B", album: "Tata"),
-        SongData(songName: "Playlist C", artistName: "Artist C", album: "Tata"),
-        SongData(songName: "Playlist D", artistName: "Artist D", album: "Tata"),
-        SongData(songName: "Playlist E", artistName: "Artist E", album: "Tata"),
-        SongData(songName: "Playlist SKFJGTITYIMBJIJ<N>OK>UOYK>M", artistName: "Artist A", album: "Tata"),
-        SongData(songName: "Playlist 你好啊我很好哇哈哈哈", artistName: "Artist 此我才不告訴你我叫什麼名字", album: "Tata"),
-        SongData(songName: "Song Name A", artistName: "Artist 猜猜看", album: "Tata"),
-        SongData(songName: "Song Name A", artistName: "Artist 好想出去玩", album: "Tata"),
-        SongData(songName: "Playlist 歌曲名吧打錯字", artistName: "Artist 耶一  yayaya ", album: "Tata"),
-    ]
+    var playlistID: String
+    var playlistType: PlaylistType
     
     var body: some View {
-        VStack {
+        let songData = API().getPlaylistTrack(playlistType: playlistType, playlistID: playlistID, territory: "TW")
+        
+        let a = VStack {
             List(songData.identified(by: \.songName)) { data in
                 HStack {
-                    Image(data.album)
+                    Image(uiImage: data.albumImage)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 80, height: 80)
@@ -29,19 +19,21 @@ struct PlaylistView : View {
         
                     VStack(alignment: .leading) {
                         Text(data.songName)
-                            .font(.system(size: 25))
+                            .font(.system(size: 20))
             
                         Text(data.artistName)
-                            .font(.system(size: 20))
+                            .font(.system(size: 15))
                             .padding(.top, 1.0)
                     }
-                    .padding([.top, .bottom, .trailing], 6.0)
+                    .padding(.trailing, 15)
+                    .padding([.top, .bottom], 6.0)
                 }
             }
         }
-        .navigationBarTitle(Text("laylistName"),displayMode: .inline)
-        //Button(action: self.sortMenuStatus.toggle, label: Text("Select"))
+        .navigationBarTitle(Text(playlistName),displayMode: .inline)
         .navigationBarItems(trailing: ShowSortMenu())
+        
+        return a
     }
 }
 
@@ -75,7 +67,7 @@ struct ShowSortMenu : View {
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
-        PlaylistView(playlistName: "Testing")
+        PlaylistView(playlistName: "Testing", playlistID: "A", playlistType: .featuredPlaylists)
     }
 }
 #endif

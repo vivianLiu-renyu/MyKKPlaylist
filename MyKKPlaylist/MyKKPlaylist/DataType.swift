@@ -4,13 +4,16 @@ import SwiftUI
 struct SongData {
     let songName: String
     let artistName: String
-    let album: String
+    let albumImage: UIImage
 }
 
-struct PlaylistData: Decodable {
+struct PlaylistData {
+    let playlistID: String
     let playlistName: String
+    let playlistImage: UIImage
     let curatorName: String
-    let album: String
+    let curatorImage: UIImage
+    
 }
 
 struct AlbumData {
