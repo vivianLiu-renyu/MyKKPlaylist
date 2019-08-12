@@ -6,7 +6,7 @@
 build/
 DerivedData/
 accessToken.json
-get_access_token.sh
+MyKKPlaylist/build-phase/get_access_token.sh
 
 ## Various settings
 *.pbxuser
