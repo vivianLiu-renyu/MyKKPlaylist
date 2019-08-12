@@ -6,6 +6,7 @@
 build/
 DerivedData/
 accessToken.json
+get_access_token.sh
 
 ## Various settings
 *.pbxuser
